@@ -2,10 +2,10 @@
 import requests, os, sys, shutil, stat
 from pathlib import Path
 
-REPO = "TU_USUARIO/TU_REPO"  # cambia a "usuario/repo"
+REPO = "novaheart-arcadian/snake"  # cambia a "novaheart-arcadian/snake"
 CURRENT = "v1.0.0"           # opcional, versión actual; también se puede leer de un archivo
 
-API_RELEASES = f"https://api.github.com/repos/{REPO}/releases/latest"
+API_RELEASES = f"https://api.github.com/repos/snake/releases/latest"
 DOWNLOAD_DIR = Path.cwd() / "update_tmp"
 
 def get_latest_release_info():
